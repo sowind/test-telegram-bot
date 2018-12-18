@@ -1,0 +1,16 @@
+{
+  "name": "testbot",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://bitbucket.org/tikhonovigor/testbot",
+  "author": "Igor Tikhonov",
+  "license": "MIT",
+  "dependencies": {
+    "socks5-https-client": "^1.2.1",
+    "telegraf": "^3.25.5"
+  },
+  "devDependencies": {
+    "debug": "^4.1.0",
+    "nodemon": "^1.18.9"
+  }
+}
