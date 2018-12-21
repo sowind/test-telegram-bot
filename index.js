@@ -9,7 +9,7 @@ const Markup = require('telegraf/markup');
  * Подтверждение работы
  * ? Нужно ли в будущем
  */
-debug('something working!');
+debug('something working!!!1');
 debug(process.env.BOT_TOKEN);
 
 /**
@@ -17,7 +17,7 @@ debug(process.env.BOT_TOKEN);
  * TODO Удалить, при нахождении решения
  */
 const SocksAgent = new SocksClient({
-    socksHost: process.env.PROXY_IP, // 188.213.166.152...
+    socksHost: process.env.PROXY_IP, // 188.213.166.152
     socksPort: process.env.PROXY_PORT, // 1080
     // socksUsername: '',
     // socksPassword: ''
