@@ -6,8 +6,10 @@
   "author": "Igor Tikhonov",
   "license": "MIT",
   "dependencies": {
+    "node-emoji": "^1.8.1",
     "socks5-https-client": "^1.2.1",
-    "telegraf": "^3.25.5"
+    "telegraf": "^3.25.5",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "debug": "^4.1.0",
