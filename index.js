@@ -10,20 +10,18 @@ const emoji = require('node-emoji');
 
 /**
  * Подтверждение работы
- * ? Нужно ли в будущем
  */
 debug('something working!!!1');
 debug(process.env.BOT_TOKEN);
 
 /**
  * Установка соединения с прокси из-за блокировки Telegram
- * TODO Удалить, при нахождении решения
  */
 const SocksAgent = new SocksClient({
-    socksHost: process.env.PROXY_IP, // 188.213.166.152
-    socksPort: process.env.PROXY_PORT, // 1080
-    // socksUsername: '',
-    // socksPassword: ''
+    socksHost: process.env.PROXY_IP,
+    socksPort: process.env.PROXY_PORT,
+    socksUsername: process.env.PROXY_USERNAME,
+    socksPassword: process.env.PROXY_PASSWORD
 });
 
 /**
@@ -153,7 +151,11 @@ bot.action('open_all_presents', ctx => {
     let presents = getRandomPresents(ctx.session.holidayPresents);
     debug('Осталось %s', presents.length);
     
-    return ctx.reply(ctx.session.holidayPresents ? (ctx.session.holidayPresents = 0,presents.join('')) : 'Подарки закончились.');
+    return ctx.reply(ctx.session.holidayPresents ? (ctx.session.holidayPresents = 0, presents.join('')) : 'Подарки закончились.');
+});
+
+bot.hears('🐈', ctx => {
+    return ctx.reply('На клавиатуру прыгнул ваш кот!');
 });
 
 bot.startPolling();
