@@ -2,7 +2,7 @@
   "name": "testbot",
   "version": "0.0.0",
   "main": "index.js",
-  "repository": "https://bitbucket.org/tikhonovigor/testbot",
+  "repository": "https://github.com/sowind/Test-Telegram-Bot",
   "author": "Igor Tikhonov",
   "license": "MIT",
   "dependencies": {
